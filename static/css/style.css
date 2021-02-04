@@ -5,6 +5,9 @@
     text-align: center;
 }
 
+#flex-box-result {
+    border: none;
+}
 
 .flex-box-container-1 {
     display: flex;
