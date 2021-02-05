@@ -14,3 +14,10 @@ function reset() {
     document.getElementById('age').remove();
 
 }
+
+function generateCat() {
+    var image = document.createElement('img');
+    var div = document.getElementById('flexCatGen');
+    image.src = "http://thecatapi.com/api/images/get?format=src&type=gif&size=small";
+    div.appendChild(image);
+}
