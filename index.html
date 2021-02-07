@@ -44,6 +44,27 @@
             <img id="scissors" src="https://images-na.ssl-images-amazon.com/images/I/81TD%2B0Y9f6L._AC_SL1500_.jpg" height="150px" width="150px" alt="" onclick="rpsGame(this)">
         </div>
     </div>
+
+    <div class="container-4">
+        <h2 id="change-my-color">Challenge 4: Change the Color of All Buttons</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange ="buttonColorChange(this)">
+                <option value="reset">Reset</option>
+                <option value="random">Random</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+                </select>
+            </form>
+
+            <button class="btn btn-primary">BLUE</button>
+            <button class="btn btn-danger">RED</button>
+            <button class="btn btn-warning">YELLOW</button>
+            <button class="btn btn-success">Green</button>
+        </div>
+    </div>
     <script src="static/js/script.js"></script>
 </body>
 </html>

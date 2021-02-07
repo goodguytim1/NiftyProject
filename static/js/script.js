@@ -113,3 +113,69 @@ function rpsFrontEnd (humanImageChoice, botImageChoice, finalMessage) {
     document.getElementById("flex-box-rps-div").appendChild(messageDiv);
     document.getElementById("flex-box-rps-div").appendChild(botDiv);
 }
+
+// Challenge 4: Change the Color of All Buttons
+var all_buttons = document.getElementsByTagName('button');
+// console.log(all_buttons);
+var copyAllButtons = [];
+for(button of all_buttons) {
+    copyAllButtons.push(button.classList[1]);
+}
+console.log(copyAllButtons);
+function buttonColorChange (buttonColor) {
+    
+    //console.log(buttonColor.value);
+    if (buttonColor.value == "red") {
+        buttonsRed();
+    } else if (buttonColor.value == "green") {
+        buttonsGreen();
+    } else if (buttonColor.value == "reset") {
+        buttonColorReset();
+    } else if (buttonColor.value == "random") {
+        randomColors();
+    } else if (buttonColor.value == "blue") {
+        buttonsBlue();
+    } else if (buttonColor.value == "yellow") {
+        buttonsYellow();
+    }
+}
+
+function buttonsRed () {
+    for(button of all_buttons) {
+        button.classList.remove(button.classList[1]);
+        button.classList.add('btn-danger');
+    }
+}
+
+function buttonsGreen () {
+    for(button of all_buttons) {
+        button.classList.remove(button.classList[1]);
+        button.classList.add('btn-success');
+    }
+}
+function buttonsBlue () {
+    for(button of all_buttons) {
+        button.classList.remove(button.classList[1]);
+        button.classList.add('btn-primary');
+    }
+}
+function buttonsYellow () {
+    for(button of all_buttons) {
+        button.classList.remove(button.classList[1]);
+        button.classList.add('btn-warning');
+    }
+}
+function buttonColorReset () {
+    console.log(all_buttons.length);
+    for(let i = 0; i < all_buttons.length; i++) {
+        all_buttons[i].classList.remove(all_buttons[i].classList[1]);
+        all_buttons[i].classList.add(copyAllButtons[i]);
+    }
+}
+function randomColors () {
+    var choices = ['btn-primary', 'btn-danger', 'btn-success', 'btn-warning'];
+    for(button of all_buttons) {
+        button.classList.remove(button.classList[1]);
+        button.classList.add(choices[Math.floor(Math.random() * 4)]);
+    }
+}
