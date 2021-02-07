@@ -121,7 +121,7 @@ var copyAllButtons = [];
 for(button of all_buttons) {
     copyAllButtons.push(button.classList[1]);
 }
-console.log(copyAllButtons);
+//console.log(copyAllButtons);
 function buttonColorChange (buttonColor) {
     
     //console.log(buttonColor.value);
@@ -166,7 +166,7 @@ function buttonsYellow () {
     }
 }
 function buttonColorReset () {
-    console.log(all_buttons.length);
+    //console.log(all_buttons.length);
     for(let i = 0; i < all_buttons.length; i++) {
         all_buttons[i].classList.remove(all_buttons[i].classList[1]);
         all_buttons[i].classList.add(copyAllButtons[i]);
