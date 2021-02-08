@@ -1,4 +1,4 @@
-.container-1, .container-2, .container-3, .container-4 {
+.container-1, .container-2, .container-3, .container-4, .container-5 {
     /* border: 1px solid black; */
     margin: 0 auto;
     width: 75%;
@@ -9,7 +9,7 @@
     border: none;
 }
 
-.flex-box-container-1, .flex-box-container-2, .flex-box-rps, .flex-box-pick-color {
+.flex-box-container-1, .flex-box-container-2, .flex-box-rps, .flex-box-pick-color, .flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3 {
     display: flex;
     /* border:1px solid black; */
     padding: 10px;
@@ -17,11 +17,29 @@
     flex-wrap: wrap;
 }
 
-.flex-box-container-1 div {
+.flex-box-container-1 div{
     display: flex;
     padding: 10px;
     /* border: 1px solid black; */
     align-items: center;
+}
+
+.flex-blackjack-row-1, .flex-blackjack-row-2 {
+    background: url('/static/images/tableBackground.png') center;
+    color: #ffffff;
+}
+
+.flex-blackjack-row-1 div {
+    height: 300px;
+}
+
+.flex-blackjack-row-2 button {
+    border: 1px solid black;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    color: #101820;
 }
 
 
@@ -40,5 +58,9 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #114B5F, #1A936F);
+    background-image: linear-gradient(to right, #006778, #D7A22A);
+}
+
+h2, h3 {
+    color: #101820;
 }
