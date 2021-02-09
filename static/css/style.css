@@ -30,7 +30,8 @@
 }
 
 .flex-blackjack-row-1 div {
-    height: 300px;
+    height: 400px;
+    width: 50%;
 }
 
 .flex-blackjack-row-2 button {
@@ -42,7 +43,17 @@ table, th, td {
     color: #101820;
 }
 
+#your-box img, #dealer-box img {
+    height: 33%;
+    width: 20%;
+    margin: 0 auto;
+    padding: 10px;
+    flex-wrap: wrap;
+}
 
+#your-box h2, #your-box span, #dealer-box h2, #dealer-box span {
+    color: white;
+}
 .flex-box-container-2 img {
     display: flex;
     /* padding: 10px; */
